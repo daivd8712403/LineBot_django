@@ -53,7 +53,7 @@ def callback(request):
                     elif event.message.text == 'David':
                         replyMessage = "What's up?"
                     else:
-                        replyMessage = 'I don\'t know what "' + event.message.text + '" means.'
+                        replyMessage = 'You can say "Hi", "David" to me.'
                     
                     try:
                         line_bot_api.reply_message(

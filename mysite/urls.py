@@ -22,4 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^helloworld/$', views.helloworld),
     url(r'^callback/$', views.callback),
+    url(r'^pushMessage/$', views.pushMessage),
+    url(r'^light_init/$', views.light_init),
+    url(r'^dashboard/$', views.dashboard),
+    url(r'^lightSetting/$', views.lightSetting),
+    url(r'^lightQuery/$', views.lightQuery),
+    url(r'^$', views.index),
 ]

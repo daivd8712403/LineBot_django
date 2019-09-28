@@ -13,7 +13,7 @@ import datetime
 import json
 
 line_bot_api = LineBotApi('ENfyQaO0OUZRgC7AOqSkbGm4JVoqH+wuEjVHsnj21iKeszVSh09W58RuRuJu/VMe7qhCDSlWNCyUiA0ZoOpY/YkNSRFg7mHaWKLUXzk4WMVA8dQzFZa0+MOMVSb3s4iA5WH8B3X0/ZzXLmxskzZUSgdB04t89/1O/w1cDnyilFU=')
-parser = WebhookParser('Channel_secret')
+parser = WebhookParser('a89f77cc9789dff49db7e7858f7ca83f')
 
 def getDateTime_str():
     tpe = pytz.timezone('Asia/Taipei')

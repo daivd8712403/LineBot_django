@@ -50,11 +50,11 @@ def callback(request):
                     if event.message == 'David':
                         replyMessage = "Yo, what's up?"
                     else:
-                        
+                        replyMessage = event.message.text
                     try:
                         line_bot_api.reply_message(
                             event.reply_token,
-                            TextSendMessage(text= event.message.text)
+                            TextSendMessage(text= replyMessage)
                         )
                     except:
                         pass 

@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from linebot import LineBotApi, WebhookParser
-from linebot.exception import InvalidSignatureError
+from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextSendMessage
 
 line_bot_api = LineBotApi('Channel_access_token')

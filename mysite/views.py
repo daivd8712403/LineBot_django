@@ -51,8 +51,7 @@ def callback(request):
                     try:
                         line_bot_api.reply_message(
                             event.reply_token,
-                            # TextSendMessage(text= 'event.message.text')
-                            TextSendMessage(text= '1234')
+                            TextSendMessage(text= 'David:' + 'event.message.text')
                         )
                     except:
                         pass

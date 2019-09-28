@@ -47,10 +47,11 @@ def callback(request):
             for event in events:
                 if isinstance(event, MessageEvent):
                     print(event.source)
-                    if event.message == 'David':
+                    if event.message.text == 'David':
                         replyMessage = "Yo, what's up?"
                     else:
                         replyMessage = event.message.text
+                    
                     try:
                         line_bot_api.reply_message(
                             event.reply_token,

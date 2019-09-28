@@ -44,23 +44,24 @@ def callback(request):
                 return HttpResponse()
             except LineBotApiError:
                 return HttpResponse()
+
             for event in events:
                 if isinstance(event, MessageEvent):
                     print(event.source)
                     if event.message.text == 'Hi':
-                        replyMessage = "Hey there, my name is David?"
+                        replyMessage = "Hey there, my name is David."
                     elif event.message.text == 'David':
                         replyMessage = "What's up?"
                     else:
-                        replyMessage = "I have no idea what are you talking about."
+                        replyMessage = 'I don\'t know what "' + event.message.text + '" means.'
                     
                     try:
                         line_bot_api.reply_message(
                             event.reply_token,
-                            TextSendMessage(text= replyMessage)
+                            TextSendMessage(text= "", quick_reply=replyMessage)
                         )
                     except:
-                        pass 
+                        pass
         except:
             return HttpResponse()
         #---------我是分隔線------------                

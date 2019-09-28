@@ -47,14 +47,17 @@ def callback(request):
             for event in events:
                 if isinstance(event, MessageEvent):
                     print(event.source)
-
+                    if event.message == 'David':
+                        replyMessage = "Yo, what's up?"
+                    else:
+                        
                     try:
                         line_bot_api.reply_message(
                             event.reply_token,
-                            TextSendMessage(text= 'David:\n' + event.message.text)
+                            TextSendMessage(text= event.message.text)
                         )
                     except:
-                        pass
+                        pass 
         except:
             return HttpResponse()
         #---------我是分隔線------------                

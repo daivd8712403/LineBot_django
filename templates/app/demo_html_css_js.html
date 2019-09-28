@@ -1,0 +1,39 @@
+<!-- HTML 標籤-->
+<html>
+    <header>
+        <!--CSS-->
+
+        <!-- css 放置於 style 標籤內 -->
+        <style>
+            .dd{
+                background-color: red;
+            }
+            #ss{
+                background-color: green;
+            }
+        </style>
+        <!-- 用link來連結到css檔案-->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        
+        <!--Javascript-->
+
+        <!-- 連結到其他javascript 檔案-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!--javascript 放置於 script 標籤內-->
+        <script>
+        </script>
+
+    </header>
+    <body>
+        <div>
+            <span class="dd">123123123</span>
+            <button id="btn">button</button>
+        </div>
+        <script>
+            $("#btn").click(function(){
+                $(".dd").toggle();
+            });
+        </script>
+    </body>
+</html>

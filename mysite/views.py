@@ -12,7 +12,7 @@ import pytz
 import datetime
 import json
 
-line_bot_api = LineBotApi('Channel_access_token')
+line_bot_api = LineBotApi('ENfyQaO0OUZRgC7AOqSkbGm4JVoqH+wuEjVHsnj21iKeszVSh09W58RuRuJu/VMe7qhCDSlWNCyUiA0ZoOpY/YkNSRFg7mHaWKLUXzk4WMVA8dQzFZa0+MOMVSb3s4iA5WH8B3X0/ZzXLmxskzZUSgdB04t89/1O/w1cDnyilFU=')
 parser = WebhookParser('Channel_secret')
 
 def getDateTime_str():
